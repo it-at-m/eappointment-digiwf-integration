@@ -1,15 +1,3 @@
-## Customize this file after creating the new REPO and remove this lines.
-What to adjust:  
-* Add the your project or repo name direct under the logo.
-* Add a short and long desciption.
-* Add links for your final repo to report a bug or request a feature.
-* Add list of used technologies.
-* If you have, add a roadmap or remove this section.
-* Fill up the section for set up and documentation.
- * Start in this file only with documentation and link to the docs folder.
-* Add project shields. Use [shields.io](https://shields.io/)
-
-## ------- end to remove -------
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
@@ -23,10 +11,8 @@ What to adjust:
     <img src="/images/logo.png" alt="Logo" height="200">
   </a>
 
-<h3 align="center">DigiWF <i>repo or project name</i></h3>
-
+<h3 align="center">eappointment-digiwf-integration</h3>
   <p align="center">
-    <i>Add a here a short description</i>
     <br /><a href="#">Report Bug</a>
     ·
     <a href="#">Request Feature</a>
@@ -36,7 +22,7 @@ What to adjust:
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-*Add a description from your project here.*
+This project includes an integration component for communication between the DigiWF platform (https://digiwf.muenchendigital.io) and the appointment setting application "Eappointment" (https://gitlab.com/eappointment/eappointment). The integration component is needed to allow process modelers to access the appointment interface declaratively.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -52,7 +38,7 @@ The documentation project is built with technologies we use in our projects:
 <!-- ROADMAP -->
 ## Roadmap
 
-*if you have a ROADMAP for your project add this here*
+The project is currently in the testing phase and is part of a proof of concept. Therefore, there is currently no roadmap.
 
 
 See the [open issues](#) for a full list of proposed features (and known issues).
@@ -60,33 +46,35 @@ See the [open issues](#) for a full list of proposed features (and known issues)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Set up
-*how can i start and fly this project*
+As described above, we are in a very early phase. The project changes daily and is therefore not suitable for installation.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Documentation
-*what insights do you have to tell*
+[comment]: <> (<!-- CONTRIBUTING -->)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+[comment]: <> (## Contributing)
 
-<!-- CONTRIBUTING -->
-## Contributing
+[comment]: <> (Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.)
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+[comment]: <> (If you have a suggestion that would make this better, please open an issue with the tag "enhancement", fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".)
 
-If you have a suggestion that would make this better, please open an issue with the tag "enhancement", fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+[comment]: <> (Don't forget to give the project a star! Thanks again!)
 
-1. Open an issue with the tag "enhancement"
-2. Fork the Project
-3. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-4. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-5. Push to the Branch (`git push origin feature/AmazingFeature`)
-6. Open a Pull Request
+[comment]: <> (1. Open an issue with the tag "enhancement")
 
-More about this in the [CODE_OF_CONDUCT](/CODE_OF_CONDUCT.md) file.
+[comment]: <> (2. Fork the Project)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+[comment]: <> (3. Create your Feature Branch &#40;`git checkout -b feature/AmazingFeature`&#41;)
+
+[comment]: <> (4. Commit your Changes &#40;`git commit -m 'Add some AmazingFeature'`&#41;)
+
+[comment]: <> (5. Push to the Branch &#40;`git push origin feature/AmazingFeature`&#41;)
+
+[comment]: <> (6. Open a Pull Request)
+
+[comment]: <> (More about this in the [CODE_OF_CONDUCT]&#40;/CODE_OF_CONDUCT.md&#41; file.)
+
+[comment]: <> (<p align="right">&#40;<a href="#top">back to top</a>&#41;</p>)
 
 
 <!-- LICENSE -->
