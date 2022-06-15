@@ -82,6 +82,11 @@
             <artifactId>jackson-datatype-threetenbp</artifactId>
             <version>${jackson-threetenbp-version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>31.0.1-jre</version>
+        </dependency>
 
         <!-- test dependencies -->
         <dependency>
@@ -99,6 +104,10 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
 
         <!-- streaming -->
         <dependency>
@@ -106,6 +115,11 @@
             <artifactId>digiwf-spring-cloudstream-utils</artifactId>
             <version>0.0.1</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -123,7 +137,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <inputSpec>${project.basedir}/src/main/resources/petstore.json</inputSpec>
+                            <inputSpec>${project.basedir}/src/main/resources/zms-swagger.json</inputSpec>
                             <generatorName>java</generatorName>
                             <library>resttemplate</library>
                             <skipValidateSpec>true</skipValidateSpec>
