@@ -22,9 +22,20 @@ import java.util.function.Consumer;
 public class MessageProcessor {
     private final ZmsService zmsService;
 
-    private final CorrelateMessageService correlateMessageService;
+    //private final CorrelateMessageService correlateMessageService;
 
     private static final String APPOINTMENT_CONFIRMED_STATUS = "appointmentConfirmedStatus";
+
+    @KafkaListener(topics = "tobias",
+            groupId = "group_id")
+
+    // Method
+    public void
+    confirmAppointmentFromEventBus_AlternateImplementation(String message)
+    {
+        // Print statement
+        System.out.println("message here also22 = " + message);
+    }
 
     @Bean
     public Consumer<Message<InlineObject26>> confirmAppointmentFromEventBus() {
@@ -45,6 +56,6 @@ public class MessageProcessor {
     public void emitResponse(final MessageHeaders messageHeaders, final boolean status) {
         final Map<String, Object> correlatePayload = new HashMap<>();
         correlatePayload.put(APPOINTMENT_CONFIRMED_STATUS, status);
-        correlateMessageService.sendCorrelateMessage(messageHeaders, correlatePayload);
+        //correlateMessageService.sendCorrelateMessage(messageHeaders, correlatePayload);
     }
 }
