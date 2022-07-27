@@ -5,6 +5,7 @@ import io.muenchendigital.digiwf.spring.cloudstream.utils.api.streaming.service.
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.openapitools.client.model.InlineObject26;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.messaging.Message;
@@ -26,15 +27,14 @@ public class MessageProcessor {
 
     private static final String APPOINTMENT_CONFIRMED_STATUS = "appointmentConfirmedStatus";
 
-    @KafkaListener(topics = "tobias",
-            groupId = "group_id")
+    @KafkaListener(topics = "#{'${spring.kafka.topic}'}", groupId = "#{'${spring.kafka.consumer.group-id}'}")
 
     // Method
     public void
     confirmAppointmentFromEventBus_AlternateImplementation(String message)
     {
         // Print statement
-        System.out.println("message here also22 = " + message);
+        System.out.println("message = " + message);
     }
 
     @Bean
